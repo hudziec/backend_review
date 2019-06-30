@@ -1,8 +1,8 @@
-# Capstone Project 1 - Ames Housing Data
+# Capstone Project - Ames Housing Data
 
 ## Introduction
 
-For my Capstone Project I decided to do a data analysis project, this interests me greatly considering my background as a licensed land surveyor. For nearly twenty years I've been involved with the physical development of real estate and this project offered me a look into another aspect of the industry. Additionally, processing data is something I am familiar with, all be it from a different industry. I've processed data from field crews containing angles and distances depicting physical locations, this has made me comfortable with interpreting data and running statistical analysis on data (least squares adjustment and compass rule) for accuracy and precision of physical locations. 
+For my Capstone Project I decided to do a data analysis project, this interests me greatly considering my background as a licensed land surveyor. For nearly twenty years I've been involved with the physical development of real estate and this project offered me a look into another aspect of the industry. Additionally, processing data is something I am familiar with, all be it from a different industry. I've processed data from field crews containing angles and distances depicting physical locations, this has made me comfortable with interpreting data and running statistical analysis on data (least squares adjustment and compass rule) for accuracy and precision of physical locations.
 
 The Ames Housing data has been used numerously as projects for data science, my intention was not to recycle the data that has been used before but to hopefully show it as a benchmark for comparison of my skills. Being new to this industry, my intention was not to "reinvent the wheel" but to demonstrate a foundation of skills that I hope I'll be able to  build on given an opportunity.
 
@@ -19,7 +19,7 @@ After printing out the commands to analyze the columns I was given and familiari
 
 #### Analysis of Heatmap of the Correlation Matrix
 
-Examing the map, the darker colors show correlation between columns. The objective of this output is to predict salesprice, columns that correlate best are garage_cars, fireplaces, totrms_abvgrd, full_bath, heating_qc, exter_qual & overall_qaul. These columns have a .45 correlation and higher.
+Examining the map, the darker colors show correlation between columns. The objective of this output is to predict salesprice, columns that correlate best are garage_cars, fireplaces, totrms_abvgrd, full_bath, heating_qc, exter_qual & overall_qaul. These columns have a .45 correlation and higher.
 
 #### Create scatterplots for each of the columns that correlate with sales price
 
@@ -28,9 +28,9 @@ Before analysis of the correlated columns, let’s see what the price of houses 
 #### What can this scatter plot tell us about the model?
 
     -If all the points fell on a diagonal line, we would have a perfect fit.
-    
+
     -If the model was more "cloud-like", the worse our fit would be.
-    
+
     -There outliers of are model are not extreme and appear to follow a normal distribution.
 
 From the scatter plot that was generated, few outliners were identified. This raised concerns that the model may have been overfit.
@@ -40,11 +40,11 @@ From the scatter plot that was generated, few outliners were identified. This ra
 #### What can the model score tell us about the model?
 
     -Closer to 1 desirable
-    
+
     -Not scale dependent.
-    
-    -A residual value of 0.8 means that 80% of the variability in the data are explained by our model, relative to a model with no     preedictors.
-    
+
+    -A residual value of 0.8 means that 80% of the variability in the data are explained by our model, relative to a model with no     predictors.
+
     -As you add more variables, residuals will never decrease (with linear regression).
 
 #### What is K-Folds Cross Validation?
@@ -66,12 +66,3 @@ After generating sales price data for lots in the clean_text.csv, opening the sa
 ## Business Recommendations
 
 My business recommendation would to be to dive deeper into how houses are evaluated. This pertains to the column determination of how conditions and qualities columns of house features are determined. Who, what or how these columns, condition and quality, are being determined is the ultimate price determinate? Apart from condition and quality columns, the house features of garage_cars, fireplaces, totrms_abvgrd, full_bath, heating_qc, are the are most desirable for Iowa. The house features that are specific for Iowa have to be garage_cars, fireplaces, heating_qc. Iowa being in rural northern area lends to the fact that most home buyers are rely on cars for transportation rather that public transportation. Home buyer are looking to protect their vehicle by keeping them out of the weather. In relation to this northern area, heat is important given the fireplaces and heating_qc have high importance. The information derived from this model is Ames, Iowa specific. Given data from another region this model would identify house features unique to that region. In other words, it's all about the data!
-
-
-
-
-
-
-
-
-
